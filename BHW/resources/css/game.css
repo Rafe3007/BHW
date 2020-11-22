@@ -1,0 +1,155 @@
+/* Great for Inforative text */
+    /* font-family: 'Xanh Mono', monospace;  */
+/* Title n stuff */
+    /* font-family: 'Charm', cursive; */
+.container {
+    width:100%;
+    background-color: #090E14;
+    max-width:960px; 
+    min-width: 960px;
+    margin:0 auto;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-image: url("../img/mansion.jpg");
+    background-size: cover;
+}
+
+/* Character Selection  */
+
+#select-character {
+    display: block;
+}
+
+#characters {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#select-character h1 {
+    color: #d70505;
+    padding-top: 24px;
+    margin-top: -12px;
+    font-family: 'Charm', cursive;
+}
+
+#select-character {
+    text-align: center;
+    transition: 0.7s;
+}
+
+.ch-card {
+    font-family: 'Xanh Mono', monospace;
+    background-color: #23303B;
+    width: 25%;
+    padding: 6px;
+    margin-bottom: 16px;
+    border-radius: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.ch-card img {
+    width: 80%;
+    /* border-radius: 1em 1em 4px 4px; */
+    border-radius: 50%;
+    height: 156px;
+}
+
+.ch-card:hover {
+    box-shadow: 0 0px 20px 0 #ac0404; 
+}
+
+.ch-card h3 {
+    margin: 4px;
+}
+
+.ch-card table {
+    border-collapse: collapse;
+    width: 50%;
+}
+.ch-card th {
+    color: #C6D0D9;
+}
+
+.ch-card td {
+    color: #C6D0D9;
+}
+
+.val {
+    color: white;
+}
+
+/* Confirm Page */
+#confirm {
+    display: none;
+    text-align: center;
+}
+
+#confirm h1 {
+    text-align: center;
+    color: #d70505;
+    padding-top: 24px;
+    margin-top: -12px;
+    font-family: 'Charm', cursive;
+}
+
+#confirm p {
+    color: #C6D0D9;
+    font-family: 'Xanh Mono', monospace;
+    font-size: x-large;
+}
+
+#btn-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#confirm-card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.btn {
+    color: #C6D0D9;
+    font-family: 'Xanh Mono', monospace;
+    font-size: x-large;
+    background-color: #101622;
+    padding: 12px;
+    width: 160px;
+    border-radius: 10px;
+}
+
+.btn:active {
+    border-style: inset;
+}
+
+.btn:focus {
+    outline: none;
+}
+
+/* Main game Page */
+#main {
+    /* display: none; */
+    padding-top: 12px;
+    margin-top: -12px;
+}
+#main img {
+    width: 98%;
+    height: 100%;
+    margin-left: 9px;
+}
+
+#grid-map {
+    border: 1px solid red;
+    height: 420px;
+}

@@ -1,0 +1,45 @@
+<!--
+TODO:
+	- Write Intro Page
+	- Base game page and how it'll look 
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Betrayal at the House on the Web</title>
+	<meta charset="utf-8">
+	<link href="resources/css/game.css" rel="stylesheet" type="text/css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Charm&family=Xanh+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container">
+		<div id="select-character">
+			<h1>Choose your Character</h1>
+			<div id="characters"></div>
+		</div>
+
+		<div id="confirm">
+			<h1>Confirm Selection</h1>
+			<p>You have chosen <span id="nameph">Ox Bellows</span></p>
+			<div id="confirm-card-container"></div>
+			<div id="btn-container">
+				<button type="button" class="btn" id="left" onclick="goBack()">Go Back</button>
+				<button type="button" class="btn" id="right" onclick="confirmed()">Confirm</button>
+			</div>
+		</div>
+
+		<div id="main">
+			<div id="grid-map">
+				
+			</div>
+		</div>
+
+	</div>
+
+<script src="resources/js/classes.js"></script>
+<script src="resources/js/game.js"></script>
+</body>
+
+</html>

@@ -139,7 +139,9 @@ body {
 
 /* Main game Page */
 #main {
-    /* display: none; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     padding-top: 12px;
     margin-top: -12px;
 }
@@ -150,6 +152,23 @@ body {
 }
 
 #grid-map {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-auto-flow: row;
     border: 1px solid red;
-    height: 420px;
+    width: 65%;
+    height: 476px;
+}
+
+.tile {
+    width: 100%;
+    height: 100%;
+    background-color:gray;
+}
+
+.tile2 {
+    width: 100%;
+    height: 100%;
+    background-color: darkgray;
 }
